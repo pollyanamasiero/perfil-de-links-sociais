@@ -11,12 +11,6 @@ body {
     color: hsl(0, 0%, 100%);
     font-size: 14px;
     font-family: Inter, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* centraliza verticalmente */
-    align-items: center;
-    min-height: 100vh; /* faz ocupar a altura total da tela */
-    margin: 0;
 }
 
 #container {
@@ -53,9 +47,9 @@ h1 {
 
 .botao {
     background-color: hsl(0, 0%, 20%);
-    width: 90%;
+    width: 100%;
     padding: 12px;
-    margin: 15px auto;
+    margin: 15px 0;
     display: grid;
     justify-content: center;
     border-radius: 5px;
@@ -77,3 +71,42 @@ footer {
     text-align: center;
 }
 
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    #container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .location, .bio {
+        font-size: 12px;
+    }
+
+    .botao {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .location, .bio {
+        font-size: 10px;
+    }
+
+    .botao {
+        font-size: 12px;
+    }
+}
