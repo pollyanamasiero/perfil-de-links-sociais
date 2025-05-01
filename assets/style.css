@@ -20,6 +20,7 @@ body {
     margin: 40px auto;
     border-radius: 15px;
     text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 img {
@@ -32,13 +33,13 @@ img {
 h1 {
     font-size: 30px;
     padding: 10px;
-}
+}  
 
 .location {
     color: hsl(75, 94%, 57%);
-    padding-bottom: 20px ;
+    padding: 10px ;
 }
-
+  
 .bio {
     padding: 10px;
 }
@@ -57,7 +58,8 @@ h1 {
 }
 
 .botao:hover {
-    background-color: #5A6D57;
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(197, 139, 85, 0.4); /* caramelo suave */
 }
 
 footer {
