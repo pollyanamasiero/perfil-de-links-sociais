@@ -11,10 +11,10 @@ body {
     color: hsl(0, 0%, 100%);
     font-size: 14px;
     font-family: Inter, sans-serif;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center; /* centraliza verticalmente */
-    align-items: center;
+    /* align-items: center;  */
     min-height: 100vh; /* faz ocupar a altura total da tela */
     margin: 0;
 }
