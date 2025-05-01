@@ -15,8 +15,9 @@ body {
 
 #container {
     background-color: hsl(0, 0%, 12%);
-    width: 400px;
-    padding: 20px 50px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
     margin: 40px auto;
     border-radius: 15px;
     text-align: center;
@@ -33,13 +34,13 @@ img {
 h1 {
     font-size: 30px;
     padding: 10px;
-}  
+}
 
 .location {
     color: hsl(75, 94%, 57%);
-    padding: 10px ;
+    padding: 10px;
 }
-  
+
 .bio {
     padding: 10px;
 }
@@ -63,9 +64,49 @@ h1 {
 }
 
 footer {
-    bottom: 0;
     position: fixed;
+    bottom: 0;
     width: 100%;
     margin-bottom: 20px;
     text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    #container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .location, .bio {
+        font-size: 12px;
+    }
+
+    .botao {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .location, .bio {
+        font-size: 10px;
+    }
+
+    .botao {
+        font-size: 12px;
+    }
 }
