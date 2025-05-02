@@ -9,7 +9,7 @@
 body {
     background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 100%);
-    font-size: 16px; /* era 14px */
+    font-size: 14px; /* era 14px */
     font-family: Inter, sans-serif;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ body {
 
 #container {
     background-color: hsl(0, 0%, 12%);
-    width: 100%;
+    width: 90%;
     max-width: 400px;
     padding: 20px;
     margin: 40px auto;
@@ -65,7 +65,7 @@ h1 {
     color: hsl(0, 0%, 100%);
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px; /* novo */
+    /* font-size: 16px; novo */
 }
 
 .botao:hover {
@@ -81,3 +81,12 @@ footer {
     text-align: center;
 }
 
+/* Quando a tela for muito pequena (tipo celular), aumentar o limite */
+@media (max-width: 480px) {
+  #container {
+    max-width: none;
+    width: 100%;
+    margin: 20px;
+    padding: 20px 10px;
+  }
+}
