@@ -24,7 +24,7 @@ body {
     max-width: 400px;
 
     padding: 20px;
-    margin: 30px;
+    margin: auto 30px;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -95,11 +95,11 @@ footer {
     font-size: 12px;
 }
 
-/* Quando a tela for muito pequena (tipo celular), aumentar o limite */
+/* Quando a tela for muito pequena (tipo celular), aumentar o limite
 @media (max-width: 480px) {
   #container {
     width: 100%;
     margin: 20px;
     padding: 20px 10px;
   }
-}
+} */
